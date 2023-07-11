@@ -3,7 +3,9 @@
 #!/bin/bash
 
 base_dir="/home/amaralchr/Mysql" #Coloca o destino que voce quer cirar para realizar o backup
-pasta1="$base_dir/pasta1" #CRiei tres pastas cada uma delas vai armazenar o backup cada vez que rodar, então são minhas váriaveis para represtar no final do código
+
+pasta1="$base_dir/pasta1" #Criei tres pastas cada uma delas vai armazenar o backup cada vez que rodar, então são minhas váriaveis para represtar no final do código
+
 pasta2="$base_dir/pasta2"
 pasta3="$base_dir/pasta3"
 
