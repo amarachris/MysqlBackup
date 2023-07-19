@@ -1,6 +1,6 @@
 #!/bin/bash
 
-base_dir="/home/amaralchr/Mysql"
+base_dir="/home/ubuntu/Mysql"
 pasta1="$base_dir/pasta1"
 pasta2="$base_dir/pasta2"
 pasta3="$base_dir/pasta3"
@@ -18,7 +18,7 @@ fi
 backup_file="$temp_dir/backup_$(date +%Y-%m-%d_%H%M%S).sql"
 
 export MYSQL_PWD="Senha123"
-docker exec mysql-A sh -c "exec mysqldump -uroot -p\$MYSQL_PWDaluno" > "$backup_file"
+docker exec mysql-A sh -c "exec mysqldump -uroot -p\$MYSQL_PWDmysql" > "$backup_file"
 
 zip "$backup_file.zip" "$backup_file"
 
